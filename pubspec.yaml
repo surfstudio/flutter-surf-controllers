@@ -1,14 +1,16 @@
 name: surf_controllers
 version: 1.0.1
-description: Common controller for call dialogs
-repository: "https://github.com/surfstudio/SurfGear/tree/main/packages/surf_controllers"
-issue_tracker: "https://github.com/surfstudio/SurfGear/issues"
+description: A flutter plugin that helps to show sheet,alert dialogs, and snackbars with controllers
+repository: "https://github.com/surfstudio/flutter-surf-controllers"
+issue_tracker: "https://github.com/surfstudio/flutter-surf-controllers/issues"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
   surf_lint_rules: ^1.0.0
 
 environment:

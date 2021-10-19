@@ -6,22 +6,22 @@ enum ExampleDialogType {
 }
 
 class ExampleDialogData extends DialogData {
+  final String title;
+  final String subtitle;
+
   ExampleDialogData({
     required this.title,
     required this.subtitle,
   });
-
-  final String title;
-  final String subtitle;
 }
 
 class ExampleDialog extends StatelessWidget {
+  final ExampleDialogData data;
+
   const ExampleDialog({
     required this.data,
     Key? key,
   }) : super(key: key);
-
-  final ExampleDialogData data;
 
   @override
   Widget build(BuildContext context) {
