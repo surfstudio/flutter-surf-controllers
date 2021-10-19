@@ -3,9 +3,9 @@ import 'package:surf_controllers/surf_controllers.dart';
 
 /// Dialog widget builder
 class DialogBuilder<T extends DialogData> {
-  DialogBuilder(this.builder);
-
   final Widget Function(BuildContext context, {required T data}) builder;
+
+  DialogBuilder(this.builder);
 
   // ignore: avoid-returning-widgets
   Widget call(BuildContext context, {required T data}) =>

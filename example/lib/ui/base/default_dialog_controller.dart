@@ -5,6 +5,16 @@ import 'package:surf_controllers/surf_controllers.dart';
 typedef ClickedAction = void Function(BuildContext context);
 
 class DefaultDialogController implements DialogController {
+  final DialogOwner? dialogOwner;
+  BuildContext? get context => _context ?? _scaffoldKey?.currentContext;
+
+  BuildContext? _context;
+  PersistentBottomSheetController? _sheetController;
+  GlobalKey<ScaffoldState>? _scaffoldKey;
+
+  ScaffoldState get _scaffoldState =>
+      _scaffoldKey?.currentState ?? Scaffold.of(_context!);
+
   DefaultDialogController(
     this._scaffoldKey, {
     this.dialogOwner,
@@ -14,17 +24,6 @@ class DefaultDialogController implements DialogController {
     this._context, {
     this.dialogOwner,
   });
-
-  final DialogOwner? dialogOwner;
-
-  BuildContext? _context;
-  PersistentBottomSheetController? _sheetController;
-  GlobalKey<ScaffoldState>? _scaffoldKey;
-
-  BuildContext? get context => _context ?? _scaffoldKey?.currentContext;
-
-  ScaffoldState get _scaffoldState =>
-      _scaffoldKey?.currentState ?? Scaffold.of(_context!);
 
   @override
   Future<R?> showAlertDialog<R>({
