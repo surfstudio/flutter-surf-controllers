@@ -1,6 +1,6 @@
 # Surf Controllers
 
-[![Build Status](https://shields.io/github/workflow/status/surfstudio/SurfGear/build?logo=github&logoColor=white)](https://github.com/surfstudio/SurfGear/tree/main/packages/surf_controllers)
+[![Build Status](https://shields.io/github/actions/workflow/status/surfstudio/flutter-surf-controllers/build.yaml?logo=github&logoColor=white)](https://github.com/surfstudio/SurfGear/tree/main/packages/surf_controllers)
 [![Pub Version](https://img.shields.io/pub/v/surf_controllers?logo=dart&logoColor=white)](https://pub.dev/packages/surf_controllers)
 [![Pub Likes](https://badgen.net/pub/likes/surf_controllers)](https://pub.dev/packages/surf_controllers)
 [![Pub popularity](https://badgen.net/pub/popularity/surf_controllers)](https://pub.dev/packages/surf_controllers/score)
